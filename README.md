@@ -6,12 +6,9 @@ Operating System:
 
 https://ftp.qubes-os.org/iso/Qubes-R4.0.2-rc3-x86_64.iso
 
-Post installation:
+Follow the steps in https://github.com/SSaratKS/qubesOS/blob/master/install%20commands 
 
 /home/user/.bashrc
-
-Follow Steps in https://github.com/SSaratKS/qubesOS/blob/master/install%20commands
-
 
 ### Software:
 

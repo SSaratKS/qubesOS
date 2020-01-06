@@ -1,5 +1,7 @@
 # qubesOS
-This contains the setup files and script for training after the OS is installed
+This contains the setup files and script for training after the OS is installed in
+
+/home/user/.bashrc
 
 ### ZIP files to download:
 

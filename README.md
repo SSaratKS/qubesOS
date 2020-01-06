@@ -1,7 +1,19 @@
 # qubesOS
 This contains the setup files and script for training after the OS is installed
 
-## ZIP files to download:
+### ZIP files to download:
+
+Android Studio
+
+Visual Code
+
+Flutter
+
+Google Chrome
+
+Java JRE
+
+#### Setup Versions:
 
 cd ~/Downloads/zip/
 

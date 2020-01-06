@@ -1,5 +1,12 @@
 # qubesOS
-This contains the setup files and script for training after the OS is installed in
+
+This repo contains the setup files and script for training after the OS is installed
+
+Operating System:
+
+https://ftp.qubes-os.org/iso/Qubes-R4.0.2-rc3-x86_64.iso
+
+Post installation:
 
 /home/user/.bashrc
 

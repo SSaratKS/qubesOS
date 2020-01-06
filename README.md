@@ -16,11 +16,7 @@ Google Chrome
 Java JRE
 
 
-cd ~/Downloads/zip/
-
-[user@training zip]$ ll
-
-total 1455668
+#### Versions Control
 
 -rw-rw-r-- 1 user user 774544822 Jan  6 06:37 android-studio-ide-191.6010548-linux.tar.gz
 

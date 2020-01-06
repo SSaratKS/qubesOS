@@ -3,7 +3,7 @@ This contains the setup files and script for training after the OS is installed 
 
 /home/user/.bashrc
 
-### ZIP files to download:
+### Software:
 
 Android Studio
 
@@ -15,7 +15,6 @@ Google Chrome
 
 Java JRE
 
-#### Setup Versions:
 
 cd ~/Downloads/zip/
 

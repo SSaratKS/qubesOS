@@ -56,15 +56,15 @@ qemu-system-x86_64: failed to initialize KVM: No such file or directory
 In /home/user/.bashrc
 ----------------------------
 
-export PATH="$PATH:/home/user/Downloads/flutter_linux_v1.12.13+hotfix.5-stable/flutter/bin"
+export PATH="$PATH:/home/user/Downloads/software/flutter_linux_v1.12.13+hotfix.5-stable/flutter/bin"
 
-export ANDROID_STUDIO="/home/user/Downloads/android-studio-ide-191.6010548-linux/android-studio/bin" 
+export ANDROID_STUDIO="/home/user/Downloads/software/android-studio-ide-191.6010548-linux/android-studio/bin" 
 export PATH=$PATH:$ANDROID_STUDIO
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 
-export PATH="$PATH:/home/user/Downloads/google_chrome/opt/google/chrome"
-export PATH="$PATH:/home/user/Downloads/visual_code/usr/share/code/bin"
+export PATH="$PATH:/home/user/Downloads/software/google_chrome/opt/google/chrome"
+export PATH="$PATH:/home/user/Downloads/software/visual_code/usr/share/code/bin"
 export PATH="$PATH:/usr/bin/docker"
 export PATH="$PATH:/usr/bin/java"
 

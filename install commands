@@ -1,0 +1,137 @@
+Installation
+------------
+
+sudo dnf -y install dnf-plugins-core
+sudo dnf config-manager \
+    --add-repo \
+    https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf install docker-ce docker-ce-cli containerd.io
+sudo systemctl start docker
+
+sudo docker run hello-world
+
+
+cd /home/user/Downloads/zip
+sudo rpm -ivh jre-8u231-linux-x64.rpm
+
+
+=======================================================================
+
+ERROR:
+------
+[user@work ~]$ code
+/home/user/Downloads/visual_code/usr/share/code/bin/../code: error while loading shared libraries: libXss.so.1: cannot open shared object file: No such file or directory
+
+SOLUTION:
+---------
+yum
+sudo yum install libXScrnSaver
+
+
+=======================================================================
+
+ERROR: During ANDROID installation through "studio.sh"
+-------------------------------------------------------
+Linux-based systems support VM acceleration through the KVM software package. 
+https://developer.android.com/studio/run/emulator-acceleration#vm-linux
+
+SOLUTION:
+---------
+https://help.ubuntu.com/community/KVM/Installation
+
+$ egrep -c '(vmx|svm)' /proc/cpuinfo
+
+If 0 it means that your CPU doesn't support hardware virtualization.
+If 1 or more it does - but you still need to make sure that virtualization is enabled in the BIOS. 
+
+$ qemu-kvm
+
+Could not access KVM kernel module: No such file or directory
+qemu-system-x86_64: failed to initialize KVM: No such file or directory
+
+
+=======================================================================
+
+----------------------------
+In /home/user/.bashrc
+----------------------------
+
+export PATH="$PATH:/home/user/Downloads/flutter_linux_v1.12.13+hotfix.5-stable/flutter/bin"
+
+export ANDROID_STUDIO="/home/user/Downloads/android-studio-ide-191.6010548-linux/android-studio/bin" 
+export PATH=$PATH:$ANDROID_STUDIO
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+
+export PATH="$PATH:/home/user/Downloads/google_chrome/opt/google/chrome"
+export PATH="$PATH:/home/user/Downloads/visual_code/usr/share/code/bin"
+export PATH="$PATH:/usr/bin/docker"
+export PATH="$PATH:/usr/bin/java"
+
+# echo $PATH
+
+which flutter
+which android
+which chrome
+which code
+which docker
+which java
+
+echo "
+LET'S BEGIN !!
+
+For Flutter:
+------------
+flutter 
+
+For Android:
+------------
+studio.sh
+android
+
+For Chrome:
+-----------
+chrome
+
+For VSCode:
+-----------
+code
+
+For Docker:
+-----------
+docker
+
+For Java:
+---------
+java
+
+"
+
+
+=======================================================================
+
+-----------------------------------------
+Terminal commands for Executing the tools
+-----------------------------------------
+
+For Flutter:
+------------
+flutter 
+
+For Android:
+------------
+studio.sh
+android
+
+For Chrome:
+-----------
+chrome
+
+For VSCode:
+-----------
+code
+
+For Docker:
+-----------
+docker
+

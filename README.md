@@ -10,18 +10,28 @@ Post installation:
 
 /home/user/.bashrc
 
+
 ### Software:
 
-Android Studio
+1. Android Studio
 
-Visual Code
+https://developer.android.com/studio
 
-Flutter
+2. Visual Code
 
-Google Chrome
+https://code.visualstudio.com/download
 
-Java JRE
+3. Flutter
 
+https://flutter.dev/docs/get-started/install/linux
+
+4. Google Chrome
+
+https://www.google.com/chrome
+
+5. Java JRE
+
+https://javadl.oracle.com/webapps/download/AutoDL?BundleId=240717_5b13a193868b4bf28bcb45c792fce896
 
 #### Versions Control
 

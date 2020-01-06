@@ -10,6 +10,8 @@ Post installation:
 
 /home/user/.bashrc
 
+Follow Steps in https://github.com/SSaratKS/qubesOS/blob/master/install%20commands
+
 
 ### Software:
 
@@ -31,7 +33,7 @@ https://www.google.com/chrome
 
 5. Java JRE
 
-https://javadl.oracle.com/webapps/download/AutoDL?BundleId=240717_5b13a193868b4bf28bcb45c792fce896
+https://java.com/en/download/linux_manual.jsp
 
 #### Versions Control
 

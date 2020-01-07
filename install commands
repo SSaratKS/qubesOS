@@ -1,63 +1,3 @@
-Installation
-------------
-
-sudo dnf -y install dnf-plugins-core
-sudo dnf config-manager \
-    --add-repo \
-    https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf -y install docker-ce docker-ce-cli containerd.io
-sudo systemctl start docker
-
-sudo docker run hello-world
-
-sudo rpm -ivh /home/user/Downloads/zip/jre-8u231-linux-x64.rpm
-
-sudo dnf -y install dnf-yum
-sudo yum -y install libXScrnSaver
-
-
-=======================================================================
-
-cd /home/user/Downloads/zip
-sudo rpm -ivh jre-8u231-linux-x64.rpm
-
-=======================================================================
-
-ERROR:
-------
-[user@work ~]$ code
-/home/user/Downloads/visual_code/usr/share/code/bin/../code: error while loading shared libraries: libXss.so.1: cannot open shared object file: No such file or directory
-
-SOLUTION:
----------
-yum
-sudo yum -y install libXScrnSaver
-
-
-=======================================================================
-
-ERROR: During ANDROID installation through "studio.sh"
--------------------------------------------------------
-Linux-based systems support VM acceleration through the KVM software package. 
-https://developer.android.com/studio/run/emulator-acceleration#vm-linux
-
-SOLUTION:
----------
-https://help.ubuntu.com/community/KVM/Installation
-
-$ egrep -c '(vmx|svm)' /proc/cpuinfo
-
-If 0 it means that your CPU doesn't support hardware virtualization.
-If 1 or more it does - but you still need to make sure that virtualization is enabled in the BIOS. 
-
-$ qemu-kvm
-
-Could not access KVM kernel module: No such file or directory
-qemu-system-x86_64: failed to initialize KVM: No such file or directory
-
-
-=======================================================================
-
 ----------------------------
 In /home/user/.bashrc
 ----------------------------
@@ -124,7 +64,6 @@ then
 fi
 
 
-
 =======================================================================
 
 -----------------------------------------
@@ -151,4 +90,68 @@ code
 For Docker:
 -----------
 docker
+
+
+=======================================================================
+
+Installation
+------------
+
+sudo dnf -y install dnf-plugins-core
+sudo dnf config-manager \
+    --add-repo \
+    https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf -y install docker-ce docker-ce-cli containerd.io
+sudo systemctl start docker
+
+sudo docker run hello-world
+
+sudo rpm -ivh /home/user/Downloads/zip/jre-8u231-linux-x64.rpm
+
+sudo dnf -y install dnf-yum
+sudo yum -y install libXScrnSaver
+
+
+=======================================================================
+
+cd /home/user/Downloads/zip
+sudo rpm -ivh jre-8u231-linux-x64.rpm
+
+=======================================================================
+
+ERROR:
+------
+[user@work ~]$ code
+/home/user/Downloads/visual_code/usr/share/code/bin/../code: error while loading shared libraries: libXss.so.1: cannot open shared object file: No such file or directory
+
+SOLUTION:
+---------
+yum
+sudo yum -y install libXScrnSaver
+
+
+=======================================================================
+
+ERROR: During ANDROID installation through "studio.sh"
+-------------------------------------------------------
+Linux-based systems support VM acceleration through the KVM software package. 
+https://developer.android.com/studio/run/emulator-acceleration#vm-linux
+
+SOLUTION:
+---------
+https://help.ubuntu.com/community/KVM/Installation
+
+$ egrep -c '(vmx|svm)' /proc/cpuinfo
+
+If 0 it means that your CPU doesn't support hardware virtualization.
+If 1 or more it does - but you still need to make sure that virtualization is enabled in the BIOS. 
+
+$ qemu-kvm
+
+Could not access KVM kernel module: No such file or directory
+qemu-system-x86_64: failed to initialize KVM: No such file or directory
+
+
+=======================================================================
+
 

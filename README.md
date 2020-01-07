@@ -11,9 +11,13 @@ Follow the steps in,
 
 https://github.com/SSaratKS/qubesOS/blob/master/install%20commands 
 
-and copy commands to "/home/user/.bashrc"
+and copy commands to "/home/user/.bashrc" after "User specific aliases and functions"
+
+Alternatively, replace the .bashrc file in "/home/user"
 
 ### Software:
+
+Extract the .RPM files to "/home/user/Downloads/software"
 
 1. Android Studio
 

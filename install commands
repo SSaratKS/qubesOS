@@ -5,15 +5,21 @@ sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager \
     --add-repo \
     https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf install docker-ce docker-ce-cli containerd.io
+sudo dnf -y install docker-ce docker-ce-cli containerd.io
 sudo systemctl start docker
 
 sudo docker run hello-world
 
+sudo rpm -ivh /home/user/Downloads/zip/jre-8u231-linux-x64.rpm
+
+sudo dnf -y install dnf-yum
+sudo yum -y install libXScrnSaver
+
+
+=======================================================================
 
 cd /home/user/Downloads/zip
 sudo rpm -ivh jre-8u231-linux-x64.rpm
-
 
 =======================================================================
 
@@ -25,7 +31,7 @@ ERROR:
 SOLUTION:
 ---------
 yum
-sudo yum install libXScrnSaver
+sudo yum -y install libXScrnSaver
 
 
 =======================================================================
@@ -106,6 +112,17 @@ For Java:
 java
 
 "
+
+export INITIAL_SETUP="/home/user/Downloads/initial_setup.sh"
+chmod +x $INITIAL_SETUP
+
+if ! [ -e  "/usr/bin/docker" ] || ! [ -e  "/usr/bin/java"  ]
+then
+    echo "Executing the initial setup script:" $INITIAL_SETUP "
+    "
+    bash $INITIAL_SETUP
+fi
+
 
 
 =======================================================================

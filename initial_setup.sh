@@ -11,7 +11,7 @@ sudo docker run hello-world
 #
 sudo rpm -ivh /home/user/Downloads/zip/jre-8u231-linux-x64.rpm
 #
-yum
+sudo dnf -y install dnf-yum
 sudo yum -y install libXScrnSaver
 #
 which flutter

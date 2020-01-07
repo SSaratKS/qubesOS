@@ -2,7 +2,6 @@
 
 This repo contains the setup and script files user for training.
 
-
 ### Operating System:
 
 https://ftp.qubes-os.org/iso/Qubes-R4.0.2-rc3-x86_64.iso
@@ -56,8 +55,6 @@ Extract file: /home/user/Downloads/software/google_chrome
 https://java.com/en/download/linujre-8u231-linux-x64.rpmx_manual.jsp
 
 Version: jre-8u231-linux-x64.rpm
-
-
 
 #### Versions Control
 

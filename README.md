@@ -2,6 +2,9 @@
 
 This repo contains the setup and script files user for training.
 
+Setup
+-----
+
 Operating System:
 https://ftp.qubes-os.org/iso/Qubes-R4.0.2-rc3-x86_64.iso
 

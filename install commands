@@ -114,11 +114,6 @@ sudo yum -y install libXScrnSaver
 
 =======================================================================
 
-cd /home/user/Downloads/zip
-sudo rpm -ivh jre-8u231-linux-x64.rpm
-
-=======================================================================
-
 ERROR:
 ------
 [user@work ~]$ code
@@ -126,7 +121,7 @@ ERROR:
 
 SOLUTION:
 ---------
-yum
+sudo dnf -y install dnf-yum
 sudo yum -y install libXScrnSaver
 
 
@@ -137,8 +132,8 @@ ERROR: During ANDROID installation through "studio.sh"
 Linux-based systems support VM acceleration through the KVM software package. 
 https://developer.android.com/studio/run/emulator-acceleration#vm-linux
 
-SOLUTION:
----------
+CHECKS:
+-------
 https://help.ubuntu.com/community/KVM/Installation
 
 $ egrep -c '(vmx|svm)' /proc/cpuinfo
@@ -151,6 +146,11 @@ $ qemu-kvm
 Could not access KVM kernel module: No such file or directory
 qemu-system-x86_64: failed to initialize KVM: No such file or directory
 
+SOLUTION:
+---------
+
+1. Enable hardware Virtuization from BIOS
+2. recheck the commands
 
 =======================================================================
 

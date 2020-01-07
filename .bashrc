@@ -17,6 +17,9 @@ export PATH
 
 # User specific aliases and functions
 
+echo "Checking for virtulization: egrep -c '(vmx|svm)' /proc/cpuinfo"
+egrep -c '(vmx|svm)' /proc/cpuinfo
+
 export PATH="$PATH:/home/user/Downloads/software/flutter_linux_v1.12.13+hotfix.5-stable/flutter/bin"
 
 export ANDROID_STUDIO="/home/user/Downloads/software/android-studio-ide-191.6010548-linux/android-studio/bin" 
@@ -29,8 +32,7 @@ export PATH="$PATH:/home/user/Downloads/software/visual_code/usr/share/code/bin"
 export PATH="$PATH:/usr/bin/docker"
 export PATH="$PATH:/usr/bin/java"
 
-# echo $PATH
-
+echo "Locating the tools"
 which flutter
 which android
 which chrome
@@ -77,4 +79,5 @@ then
     "
     bash $INITIAL_SETUP
 fi
+
 

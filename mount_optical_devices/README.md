@@ -32,5 +32,5 @@ mount /dev/sr0 /mnt/removable
 
 qvm-copy-to-vm training /mnt/removable/Windows.iso
 
-wodim -v dev=/dev/sr0 -eject /home/user/QubesIncoming/dom0/Windows.iso.
+wodim -v dev=/dev/sr0 -eject /home/user/QubesIncoming/dom0/Windows.iso
 ```

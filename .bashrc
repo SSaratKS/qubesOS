@@ -70,6 +70,11 @@ java
 
 "
 
+echo "To start Docker Daemon
+sudo systemctl start docker
+sudo docker run hello-world
+"
+
 export INITIAL_SETUP="/home/user/Downloads/initial_setup.sh"
 chmod +x $INITIAL_SETUP
 
@@ -79,5 +84,4 @@ then
     "
     bash $INITIAL_SETUP
 fi
-
 
